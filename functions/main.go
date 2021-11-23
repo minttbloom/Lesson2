@@ -124,7 +124,4 @@ func main() {
 
 	fmt.Println(signalStrenght(600))
 	fmt.Println(downloadTime(1, 100))
-
-
 }
-
