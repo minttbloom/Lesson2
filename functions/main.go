@@ -100,7 +100,7 @@ func comparefunc4(c4 int, c44 int) string {
 	}
 }
 
-func signalStrenght( distance int) int {
+func signalStrenght(distance int) int {
 	var signalOriginPerCent = 100
 	var km = 100
 	var flowRatePerCent = 2
