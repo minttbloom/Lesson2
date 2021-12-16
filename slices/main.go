@@ -1,19 +1,24 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
-func x(a ...int) {
-	var nums = []int { 3, 5, 7 }
+func x(a ...int) string {
+	var memoryValue string
+	var nums = []int{3, 5, 7}
 	for _, v := range nums {
 		correctValue := v - 1
 		if len(a) > correctValue {
-			fmt.Print(a[correctValue])
+			memoryValue += strconv.Itoa(a[correctValue])
 		} else {
-			fmt.Print(0)
+			memoryValue += "0"
 		}
 	}
+	return memoryValue
 }
 
 func main() {
-	x(1, 2, 3, 4, 5)
+	fmt.Println(x(1, 2, 3, 4, 5))
 }
