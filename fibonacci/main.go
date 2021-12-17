@@ -1,10 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 type IntFunc func() int
 
-func main()  {
+func main() {
 	counter := createFibonacciCounter()
 	fmt.Println(counter(), counter(), counter(), counter(), counter(), counter(), counter())
 }
