@@ -21,4 +21,7 @@ func TestX(t *testing.T) {
 	assert.Equal(t, "600", result5)
 	assert.Equal(t, "000", result6)
 
+	assert.NotEqual(t, "000", result1)
+	assert.NotEqual(t, "16456", result1)
+
 }
